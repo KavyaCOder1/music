@@ -1,0 +1,11 @@
+{
+  "name": "aviaxmusic",
+  "version": "1.0.0",
+  "description": "Node needed for pytgcalls",
+  "engines": {
+    "node": "20.x"
+  },
+  "scripts": {
+    "start": "echo 'Node.js ready'"
+  }
+}
