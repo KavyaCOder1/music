@@ -5,8 +5,10 @@ import socket
 from datetime import datetime
 
 import urllib3
-from git import Repo
-from git.exc import GitCommandError, InvalidGitRepositoryError
+if not os.environ.get("DYNO"):  # Only import Git on non-Heroku
+    from git import Repo
+else:
+    Repo = None
 from pyrogram import filters
 
 import config
