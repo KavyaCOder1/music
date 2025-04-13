@@ -1,9 +1,1 @@
-#!/bin/bash
-
-echo "🔁 Starting AviaxMusic bot with auto-restart..."
-
-while true; do
-    python3 -m AviaxMusic
-    echo "❌ Bot crashed with exit code $? — restarting in 5 seconds..."
-    sleep 5
-done
+python3 -m AviaxMusic
